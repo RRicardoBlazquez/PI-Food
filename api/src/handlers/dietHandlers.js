@@ -1,8 +1,8 @@
 const { createdDiet, getAllDiets } = require("../controllers/dietControllers");
 
-const getDietHandlers = (req, res) => {
+const getDietHandlers = async (req, res) => {
   try {
-    const listDiets = getAllDiets();
+    const listDiets = await getAllDiets();
     res.status(200).send(listDiets);
   } catch (error) {
     res.status(404).send("Error accediendo a las dietas");

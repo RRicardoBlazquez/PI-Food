@@ -11,7 +11,6 @@ const getRecipeHandler = async (req, res) => {
   const source = isNaN(idRecipe) ? "bdd" : "api";
   try {
     const newRecipe = await getRecipeId(idRecipe, source);
-    const { id, title, image } = newRecipe;
     res.status(200).json(newRecipe);
   } catch (error) {
     res

@@ -1,4 +1,4 @@
-import "./Home.module.css";
+import style from "./Home.module.css";
 import CardsContainer from "../../components/CardsContainer/CardsContainer";
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
@@ -10,8 +10,7 @@ function Home() {
     dispatch(getRecipes());
   }, [dispatch]);
   return (
-    <div>
-      <h1>esta es la Home page</h1>
+    <div className={style.container}>
       <CardsContainer />
     </div>
   );

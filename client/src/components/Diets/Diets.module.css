@@ -1,0 +1,12 @@
+.containerDiets {
+  display: flex;
+  flex-flow: column;
+  width: 300px;
+}
+.text {
+  display: flex;
+  width: 300px;
+  align-items: center;
+  font-size: larger;
+  color: rgba(236, 234, 230, 1);
+}

@@ -6,7 +6,7 @@ const createdDiet = async (name) => {
   return newDiet;
 };
 
-const getDiets = async (listDiets) => {
+const setDiets = async (listDiets) => {
   let newListDietId = await Promise.all(
     listDiets.map(async (nameDiet) => {
       const [dieta, created] = await Diet.findOrCreate({
@@ -20,13 +20,13 @@ const getDiets = async (listDiets) => {
   return newListDietId;
 };
 
-const getAllDiets = () => {
-  const listDiets = Diet.findAll();
+const getAllDiets = async () => {
+  const listDiets = await Diet.findAll();
   return listDiets;
 };
 
 module.exports = {
   createdDiet,
   getAllDiets,
-  getDiets,
+  setDiets,
 };

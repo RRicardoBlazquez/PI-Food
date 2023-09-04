@@ -26,7 +26,7 @@ module.exports = (sequelize) => {
         type: DataTypes.FLOAT,
       },
       steps: {
-        type: DataTypes.ARRAY(DataTypes.JSON),
+        type: DataTypes.STRING,
       },
       created: {
         type: DataTypes.BOOLEAN,

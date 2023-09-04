@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("../../image/Best-restaurants-in-Seoul-Fine-dining-Jungsik-Seoul-Mingles-restaurant.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(238, 246, 246, 0);
+  text-decoration: none;
+}
+.img {
+  display: flex;
+  width: 200px;
+}
+.img:hover {
+  width: 300px;
+}
+
+.containerImg {
+  display: flex;
+  width: 200px;
+}
+.text {
+  color: aliceblue;
+}

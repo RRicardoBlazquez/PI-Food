@@ -1,11 +1,14 @@
-import "./Landing.module.css";
+import style from "./Landing.module.css";
 import { NavLink } from "react-router-dom";
+import imagen from "../../image/gorroChef2.png";
 
 function Landing() {
   return (
-    <div>
-      <NavLink to={"/home"}>
-        <h1>esta es la Landing page</h1>
+    <div className={style.container}>
+      <NavLink className={style.button} to={"/home"}>
+        <picture className={style.containerImag}>
+          <img className={style.img} src={imagen} alt="ingresar" />
+        </picture>
       </NavLink>
     </div>
   );

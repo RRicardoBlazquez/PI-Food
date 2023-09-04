@@ -5,12 +5,12 @@ import NavBar from "./components/NavBar/NavBar";
 function App() {
   const { pathname } = useLocation();
   return (
-    <div className="App">
+    <div>
       {pathname !== "/" && <NavBar />}
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/detail" element={<Detail />} />
+        <Route path="/detail/:id" element={<Detail />} />
         <Route path="/form" element={<Form />} />
       </Routes>
     </div>

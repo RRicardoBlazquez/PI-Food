@@ -1,6 +1,39 @@
+/* $bistre: rgba(44, 33, 27, 1);
+$black-bean: rgba(53, 25, 21, 1);
+$persian-orange: rgba(210, 142, 105, 1);
+$lion: rgba(160, 147, 111, 1);
+$platinum: rgba(236, 234, 230, 1); */
 .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 700px;
+}
+
+.containerCards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.containerPage {
+  display: flex;
+  flex-flow: row;
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .containerPage {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+}
+.paginationContainer {
+  display: flex;
+  width: 100%;
+  background-color: rgba(48, 47, 51, 0.399);
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 }

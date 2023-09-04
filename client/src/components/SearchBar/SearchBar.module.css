@@ -1,0 +1,39 @@
+/* $bistre: rgba(44, 33, 27, 1);
+$black-bean: rgba(53, 25, 21, 1);
+$persian-orange: rgba(210, 142, 105, 1);
+$lion: rgba(160, 147, 111, 1);
+$platinum: rgba(236, 234, 230, 1); */
+.container {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.Search {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  outline: none;
+  border-radius: 10px;
+
+  height: 40px;
+  width: 200px;
+  padding: 0 20px;
+  border: 2px solid rgba(210, 142, 105, 1);
+}
+
+.button {
+  color: rgb(242, 249, 249);
+  margin: 1%;
+  border-radius: 10px;
+  width: auto;
+  height: 40px;
+  border: 2px solid rgba(210, 142, 105, 1);
+}
+
+.imagen {
+  display: flex;
+  width: 40px;
+}
